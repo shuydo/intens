@@ -21,6 +21,7 @@ body {
   border-radius: 10px;
   display: flex;
   max-width: 620px;
+  min-width: 300px;
   flex-grow: 1;
   position: relative;
 }
@@ -126,6 +127,11 @@ body {
   font-size: 14px;
   line-height: 23px;
 }
+.slide-otemn{
+  background-image: url(./img/slider-card-l.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .slide-summer {
   /* background: linear-gradient(
     90deg,
@@ -133,7 +139,12 @@ body {
     rgba(0, 0, 0, 0.43) 100%,
     url(../img/summer.png) no-repeat / cover
   ); */
-  background-image: url(../img/summer.png);
+  background-image: url(./img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-vitamin{
+  background-image: url(./img/slider-card-r.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -310,21 +321,20 @@ body {
 .tabs-link {
   font-size: 20px;
   line-height: 23px;
-
   color: #49494f;
-
-  text-decoration: none; /* color: #f37321; */
+  text-decoration: none;
   margin-right: 58px;
 }
 .tabs-link.active {
   color: #f37321;
 }
-.tabs-container {
+.tabs-content {
+  margin: -15px;
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 60px; */
 }
 .tabs-card {
+  margin: 15px;
   max-width: 270px;
   border-radius: 20px;
   overflow: hidden;
@@ -337,7 +347,10 @@ body {
   padding: 23px;
 }
 .tabs-title {
-  margin: 0 0 13px;
+  /* margin: 0 0 13px; */
+  margin-top: 0;
+  margin-bottom: 13px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
@@ -361,6 +374,7 @@ body {
   margin-bottom: 5px;
 }
 .tabs-weight {
+  /* font-weight: 500;  */
   font-size: 17px;
   line-height: 20px;
   color: #aaaab1;
@@ -458,26 +472,99 @@ body {
   margin-left: 20px;
   text-decoration: none;
 }
-
-/* ---------------------- */
-.header {
-  /* display: none; */
-}
+/* --------- dynemic ------------- */
 .slider {
-  /* display: none; */
+  position: relative;
 }
-.promo {
-  /* display: none; */
+.slider-btns {
+  position: absolute;
+  z-index: 1;
+  right: 45px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
 }
-.delivery-week {
-  /* display: none; */
+.slider-btn {
+  cursor: pointer;
 }
-.section-grey {
-  /* display: none; */
+/* --------- responsive ------------- */
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin: 0 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 30px);
+  }
 }
-.section-benefits{
-  /* display: none; */
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 70px;
+  }
+  .delivery-card {    /* ?! */
+    flex: 50%;                    
+    max-width: calc(50% - 30px);
+  }
+  .footer-logo {
+    margin-right: 40px;
+  }
 }
-.footer {
-  /* display: none; */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form { /* ?! */
+    order: 5;
+    margin: 15px 0;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
 }
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .tabs-card {
+    max-width: 100%;
+  }
+}
+/* ---------------------- */
+/* .header {
+  display: none;
+} */
+/* .slider {
+  display: none;
+} */
+/* .promo {
+  display: none;
+} */
+/* .delivery-week {
+  display: none;
+} */
+/* .section-grey {
+  display: none;
+} */
+/* .section-benefits{
+  display: none;
+} */
+/* .footer {
+  display: none;
+} */
