@@ -12,37 +12,40 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
+    /> -->
 
     <title>Food</title>
   </head>
 
   <body>
-    <header class="header container">
-      <a href="/" class="logo">
-        <img width="128" src="img/logo.png" alt="Logo" class="logo-img" />
-      </a>
+    <div class="container">
+      <header class="header">
+        <a href="/" class="logo">
+          <img width="128" src="img/logo.png" alt="Logo" class="logo-img" />
+        </a>
 
-      <form action="#" class="search-form">
-        <input class="search-input" type="search" placeholder="Блюда" />
-        <button class="search-btn">
-          <img src="img/svg/search-icon.svg" alt="si" class="search-icon" />
-        </button>
-      </form>
+        <form action="#" class="search-form">
+          <input class="search-input" type="search" placeholder="Блюда" />
+          <button class="search-btn">
+            <img src="img/svg/search-icon.svg" alt="si" class="search-icon" />
+          </button>
+        </form>
 
-      <div class="auth">
-        <a href="#" class="login">Войти</a>
-      </div>
-      <!-- /.auth -->
-      <a href="#" class="shopping-cart">
-        <img src="img/svg/cart.svg" alt="cart" />
-        <span class="counter">12</span>
-      </a>
-    </header>
+        <div class="auth">
+          <a href="#" class="login">Войти</a>
+        </div>
+        <!-- /.auth -->
+        <a href="#" class="shopping-cart">
+          <img src="img/svg/cart.svg" alt="cart" />
+          <span class="counter">12</span>
+        </a>
+      </header>
+    </div>
 
     <main class="main">
       <div class="slider container">
@@ -120,11 +123,12 @@
       <div class="container">
         <div class="promo">
           <section class="card card-text-light sweet-basket">
-            <img
+            <!-- <section class="card card-text-light sweet-basket"> -->
+            <!-- <img
               src="img/sweet-basket.png"
               alt="sweet-basket"
               class="card-img"
-            />
+            /> -->
             <div class="card-header">
               <h3 class="card-title">Сладкая корзина</h3>
               <p class="card-description">
@@ -141,8 +145,8 @@
           </section>
           <!-- /.card L-->
 
-          <section class="card card-text-light sweet-basket">
-            <img src="img/minimum.png" alt="minimum.png" class="card-img" />
+          <section class="card card-text-light minimum">
+            <!-- <img src="img/minimum.png" alt="minimum.png" class="card-img" /> -->
             <div class="card-header">
               <h3 class="card-title">Минимум усилий</h3>
               <p class="card-description">
@@ -481,7 +485,8 @@
       <!-- /.conteiner -->
     </footer>
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="main.js" type="module"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
