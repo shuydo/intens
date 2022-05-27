@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -7,8 +7,6 @@ body {
 .container {
   max-width: 1194px;
   margin: auto;
-
-  /* outline: 1px solid black; */
 }
 .header {
   display: flex;
@@ -175,19 +173,20 @@ body {
     rgba(0, 0, 0, 0) 100%
   );
 } */
+/* ==================== PROMO ======================= */
 .promo {
   padding: 50px 0;
-  margin: -20px;
+  /* margin: -20px; */
   display: flex;
   justify-content: space-between;
 }
 .card {
   flex: 50%;
-  position: relative;
+  /* position: relative; */
   border-radius: 20px;
   overflow: hidden;
   padding: 32px;
-  margin: 20px;
+  /* margin: 20px; */
   max-width: 570px;
   min-height: 380px;
   display: flex;
@@ -236,11 +235,11 @@ body {
 }
 .sweet-basket {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/sweet-basket.png") no-repeat center / cover;
+    url('../img/sweet-basket.png') no-repeat center / cover;
 }
 .minimum {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/minimum.png") no-repeat center / cover;
+    url('../img/minimum.png') no-repeat center / cover;
 }
 .card-img {
   position: absolute;
@@ -251,6 +250,7 @@ body {
   z-index: -2;
   object-fit: cover;
 }
+/* =================== DELIVERY ======================== */
 .section-title {
   /* font-family: Roboto;
   font-style: normal; */
@@ -261,13 +261,10 @@ body {
   margin-top: 0;
   margin-bottom: 47px;
 }
-.delivery-week {
-  padding: 100px 0; /* margin: ; */
-}
 .delivery-cards {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  justify-content: space-between;
 }
 .delivery-card {
   position: relative;
@@ -275,7 +272,10 @@ body {
   height: 182px;
   border-radius: 18px;
   overflow: hidden;
-  margin: 15px;
+  margin-bottom: 30px;
+
+  /* margin: 15px; */
+  /* margin-right: 40px; */
 }
 .delivery-img {
   width: 100%;
@@ -321,12 +321,13 @@ body {
 .tag-holiday {
   background-color: #fef7fe;
 }
-/* ------------------- */
+/* =============== grey ================== */
 .section-grey {
   background-color: #f6f6f6;
 }
 .category {
-  padding: 40px 60px;
+  padding: 40px 0;
+  /* padding: 40px 60px; */
 }
 .tabs {
   display: flex;
@@ -346,12 +347,12 @@ body {
   color: #f37321;
 }
 .tabs-content {
-  margin: -15px;
+  /* margin: -15px; */
   display: flex;
   justify-content: space-between;
 }
 .tabs-card {
-  margin: 15px;
+  /* margin: 15px; */
   max-width: 270px;
   border-radius: 20px;
   overflow: hidden;
@@ -418,11 +419,12 @@ body {
 .section-benefits {
   /* background: #e5e5e5; */
   /* #e9e9e9; */
-  padding: 100px 0 202px;
+  padding: 100px 0 100px;
+  /* padding: 100px 0 202px; */
 }
-.section-benefits.container {
+/* .section-benefits .container {
   margin-top: 100px;
-}
+} */
 
 .benefit-content {
   display: flex;
@@ -514,19 +516,37 @@ body {
   .search-form {
     margin: 0 40px;
   }
+  .card {
+    padding: 25px;
+    max-width: 470px;
+    min-height: 300px;
+  }
   .delivery-card {
     flex: 33.3%;
-    max-width: calc(33.3% - 30px);
+    max-width: calc(33.3% - 15px);
+    /* margin-bottom: 30px; */
+  }
+  .tabs {
+    margin-bottom: 0;
   }
   .tabs-content {
     flex-wrap: wrap;
+    /* margin-bottom: 0;   */
   }
   .tabs-card {
     flex: 50%;
     max-width: calc(50% - 30px);
+    margin-top: 60px;
+  }
+  .section-benefits {
+    padding: 50px 0;
+  }
+  .benefit-card {
+    max-width: 232px;
+    padding: 0 5px;
   }
 }
-
+/* ===================== 992px ===================== */
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
@@ -534,15 +554,38 @@ body {
   .slide {
     padding: 70px;
   }
+  .card {
+    padding: 15px;
+    max-width: 365px;
+    min-height: 250px;
+  }
   .delivery-card {
     flex: 50%;
-    max-width: calc(50% - 30px);
+    max-width: calc(50% - 15px);
+    /* margin-bottom: 60px; */
   }
+  .tabs-card {
+    max-width: calc(50% - 20px);
+    margin-top: 40px;
+  }
+
+  .section-benefits {
+    padding-bottom: 0;
+  }
+  .benefit-content {
+    flex-wrap: wrap;
+  }
+  .benefit-card {
+    flex: 50%;
+    max-width: calc(50% - 30px);
+    margin-bottom: 60px;
+  }
+
   .footer-logo {
     margin-right: 40px;
   }
 }
-
+/* ===================== 768px ===================== */
 @media (max-width: 768px) {
   .container {
     max-width: 560px;
@@ -554,17 +597,73 @@ body {
     order: 5;
     margin: 15px 0;
   }
+  .slide {
+    padding: 50px;
+  }
   .promo {
     flex-wrap: wrap;
+    padding: 40px 0;
+  }
+  .card {
+    max-width: 270px;
+    min-height: 250px;
+    /* align-items: center; */
+  }
+  .card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .delivery-card {
+    /* flex: 50%; */
+    max-width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .benefit-card {
+    max-width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+
+  .tabs-card {
+    max-width: calc(50% - 15px);
+    margin-top: 30px;
+  }
+
+  .footer-logo {
+    width: 128px;
+    margin-right: 15px;
+  }
+  .footer-link {
+    margin-right: 10px;
+  }
+  /* .social-links{    
+    margin-left: 0;  
+  } */
+  .social-link {
+    margin-left: 5px;
   }
 }
-
+/* ===================== 576px ===================== */
 @media (max-width: 576px) {
   .container {
-    max-width: 90%;
+    max-width: 518px;
   }
+
+  .card {
+    padding: 10px;
+    max-width: 250px;
+  }
+
+  .benefit-card {
+    max-width: calc(50% - 15px);
+    margin-bottom: 30px;
+  }
+
   .tabs-card {
-    max-width: 100%;
+    max-width: calc(50% - 10px);
+    margin-top: 20px;
   }
 }
 /* ---------------------- */
