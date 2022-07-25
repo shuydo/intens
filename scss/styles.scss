@@ -1,9 +1,9 @@
 @import '0/0_base';
 
-@media (max-width: 1260px) { @import '1_1260/1260'; }
+@media screen and (max-width: 1260px) { @import '1_1260/1260'; }
 
-@media (max-width: 992px) { @import '2_992/992'; }
+@media screen and (max-width: 992px) { @import '2_992/992'; }
 
-@media (max-width: 768px) { @import '3_768/768'; }
+@media screen and (max-width: 768px) { @import '3_768/768'; }
 
-@media (max-width: 576px) { @import '4_576/576'; } 
+@media screen and (max-width: 576px) { @import '4_576/576'; } 
