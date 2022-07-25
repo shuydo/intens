@@ -1,0 +1,42 @@
+
+/* ---------------- benefits -------------------- */
+.section-benefits {
+  padding: 100px 0 100px;
+}
+.benefit-content {
+  display: flex;
+  justify-content: space-between;
+}
+.benefit-card {
+  max-width: 270px;
+  padding: 0 23px;
+
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+.tumb {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+.benefit-title {
+  width: 188px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.benefit-descr {
+  font-size: 14px;
+  line-height: 22px;
+  color: #49494f;
+  width: 219px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

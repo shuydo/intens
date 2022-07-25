@@ -1,0 +1,66 @@
+/* =================== DELIVERY ======================== */
+.section-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.delivery-card {
+  position: relative;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.delivery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.delivery-tag {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  border-radius: 30px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494f;
+  padding: 5px 10px;
+}
+.tag-health {
+  background-color: #d0fd89;
+}
+.tag-vegetable {
+  background-color: #aebc41;
+  color: #fef7fe;
+}
+.tag-meat {
+  background-color: #b86b78;
+  color: #fef7fe;
+}
+.tag-bird {
+  background-color: #d68334;
+  color: #fef7fe;
+}
+.tag-fish {
+  background-color: #cd6255;
+}
+.tag-child {
+  background-color: #fffdbf;
+}
+.tag-parents {
+  background-color: #f6fdc8;
+}
+.tag-holiday {
+  background-color: #fef7fe;
+}

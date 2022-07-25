@@ -1,0 +1,86 @@
+.slide {
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+}
+.slide-text-light {
+  background-color: grey;
+  color: #fff;
+}
+.slide-content {
+  max-width: 405px;
+}
+.slide-title {
+  margin: 0 0 15px 0;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+}
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+.button-primary {
+  background-color: #f47322;
+  color: #fff;
+}
+.button-default {
+  background-color: #fff;
+  color: #5f5f61;
+}
+.button {
+  border-radius: 25px;
+  padding: 12px 50px;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+.slide-otemn {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    center / cover no-repeat url(../img/slider-card-l.png);
+}
+.slide-summer {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    center / cover no-repeat url(../img/summer.png);
+}
+.slide-vitamin {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    center / cover no-repeat url(../img/slider-card-r.png);
+}
+/* --------- slider ------------- */
+.slider {
+  position: relative;
+}
+.slider-btns {
+  position: absolute;
+  z-index: 1;
+  right: 45px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.slider-btn {
+  cursor: pointer;
+}
