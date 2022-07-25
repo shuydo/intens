@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -7,8 +7,6 @@ body {
 .container {
   max-width: 1194px;
   margin: auto;
-
-  /* outline: 1px solid black; */
 }
 .header {
   display: flex;
@@ -81,7 +79,6 @@ body {
 }
 
 .slide {
-  position: relative;
   border-radius: 20px;
   overflow: hidden;
   min-height: 400px;
@@ -94,8 +91,7 @@ body {
   color: #fff;
 }
 .slide-content {
-  position: relative;
-  max-width: 400px;
+  max-width: 405px;
 }
 .slide-title {
   margin: 0 0 15px 0;
@@ -127,71 +123,47 @@ body {
   font-size: 14px;
   line-height: 23px;
 }
-.slide-otemn{
-  background-image: url(./img/slider-card-l.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.slide-otemn {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    center / cover no-repeat url(../img/slider-card-l.png);
 }
 .slide-summer {
-  /* background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.43) 40.45%,
-    rgba(0, 0, 0, 0.43) 100%,
-    url(../img/summer.png) no-repeat / cover
-  ); */
-  background-image: url(./img/summer.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slide-vitamin{
-  background-image: url(./img/slider-card-r.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slide:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.43) 40.45%,
-    rgba(0, 0, 0, 0) 100%
-  );
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    center / cover no-repeat url(../img/summer.png);
 }
+.slide-vitamin {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    center / cover no-repeat url(../img/slider-card-r.png);
+}
+/* ==================== PROMO ======================= */
 .promo {
   padding: 50px 0;
-  margin: -20px;
+  /* margin: -20px; */
   display: flex;
   justify-content: space-between;
 }
 .card {
   flex: 50%;
-  position: relative;
   border-radius: 20px;
   overflow: hidden;
   padding: 32px;
-  margin: 20px;
   max-width: 570px;
   min-height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.card:before {
-  z-index: -1;
-
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 .card-text-light {
   color: #fff;
@@ -222,9 +194,14 @@ body {
   line-height: 23px;
   margin-bottom: 25px;
 }
-/* .sweet-basket {
-  background: url("../img/sweet-basket.png") no-repeat center / cover;
-} */
+.sweet-basket {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/sweet-basket.png') no-repeat center / cover;
+}
+.minimum {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/minimum.png') no-repeat center / cover;
+}
 .card-img {
   position: absolute;
   top: 0;
@@ -234,23 +211,19 @@ body {
   z-index: -2;
   object-fit: cover;
 }
+/* =================== DELIVERY ======================== */
 .section-title {
-  /* font-family: Roboto;
-  font-style: normal; */
+  font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 23px;
-  /* color: #000000; */
   margin-top: 0;
   margin-bottom: 47px;
-}
-.delivery-week {
-  padding: 100px 0; /* margin: ; */
 }
 .delivery-cards {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  justify-content: space-between;
 }
 .delivery-card {
   position: relative;
@@ -258,7 +231,7 @@ body {
   height: 182px;
   border-radius: 18px;
   overflow: hidden;
-  margin: 15px;
+  margin-bottom: 30px;
 }
 .delivery-img {
   width: 100%;
@@ -304,12 +277,12 @@ body {
 .tag-holiday {
   background-color: #fef7fe;
 }
-/* ------------------- */
+/* =============== grey ================== */
 .section-grey {
   background-color: #f6f6f6;
 }
 .category {
-  padding: 40px 60px;
+  padding: 40px 0;
 }
 .tabs {
   display: flex;
@@ -329,12 +302,10 @@ body {
   color: #f37321;
 }
 .tabs-content {
-  margin: -15px;
   display: flex;
   justify-content: space-between;
 }
 .tabs-card {
-  margin: 15px;
   max-width: 270px;
   border-radius: 20px;
   overflow: hidden;
@@ -347,7 +318,6 @@ body {
   padding: 23px;
 }
 .tabs-title {
-  /* margin: 0 0 13px; */
   margin-top: 0;
   margin-bottom: 13px;
 
@@ -374,7 +344,6 @@ body {
   margin-bottom: 5px;
 }
 .tabs-weight {
-  /* font-weight: 500;  */
   font-size: 17px;
   line-height: 20px;
   color: #aaaab1;
@@ -399,20 +368,13 @@ body {
 }
 /* ---------------- benefits -------------------- */
 .section-benefits {
-  /* background: #e5e5e5; */
-  /* #e9e9e9; */
-  padding: 100px 0 202px;
+  padding: 100px 0 100px;
 }
-.section-benefits.container {
-  margin-top: 100px;
-}
-
 .benefit-content {
   display: flex;
   justify-content: space-between;
 }
 .benefit-card {
-  /* outline: 1px solid tomato; */
   max-width: 270px;
   padding: 0 23px;
 
@@ -445,7 +407,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* ------------------------------ */
+/* ============= FOOTER ============= */
 .footer {
   background: #f6f6f6;
   padding: 40px 0;
@@ -464,15 +426,13 @@ body {
   margin-right: 50px;
 }
 .social-links {
-  /* display: flex; */
-  /* align-items: center; */
   margin-left: auto;
 }
 .social-link {
   margin-left: 20px;
   text-decoration: none;
 }
-/* --------- dynemic ------------- */
+/* --------- slider ------------- */
 .slider {
   position: relative;
 }
@@ -497,15 +457,36 @@ body {
   .search-form {
     margin: 0 40px;
   }
+  .card {
+    padding: 25px;
+    max-width: 470px;
+    min-height: 300px;
+  }
+  .delivery-card {
+    flex: 33.3%;
+    max-width: calc(33.3% - 15px);
+  }
+  .tabs {
+    margin-bottom: 0;
+  }
   .tabs-content {
     flex-wrap: wrap;
+    /* margin-bottom: 0;   */
   }
   .tabs-card {
     flex: 50%;
     max-width: calc(50% - 30px);
+    margin-top: 60px;
+  }
+  .section-benefits {
+    padding: 50px 0;
+  }
+  .benefit-card {
+    max-width: 232px;
+    padding: 0 5px;
   }
 }
-
+/* ===================== 992px ===================== */
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
@@ -513,15 +494,37 @@ body {
   .slide {
     padding: 70px;
   }
-  .delivery-card {    /* ?! */
-    flex: 50%;                    
-    max-width: calc(50% - 30px);
+  .card {
+    padding: 15px;
+    max-width: 365px;
+    min-height: 250px;
   }
+  .delivery-card {
+    flex: 50%;
+    max-width: calc(50% - 15px);
+  }
+  .tabs-card {
+    max-width: calc(50% - 20px);
+    margin-top: 40px;
+  }
+
+  .section-benefits {
+    padding-bottom: 0;
+  }
+  .benefit-content {
+    flex-wrap: wrap;
+  }
+  .benefit-card {
+    flex: 50%;
+    max-width: calc(50% - 30px);
+    margin-bottom: 60px;
+  }
+
   .footer-logo {
     margin-right: 40px;
   }
 }
-
+/* ===================== 768px ===================== */
 @media (max-width: 768px) {
   .container {
     max-width: 560px;
@@ -529,42 +532,71 @@ body {
   .header {
     flex-wrap: wrap;
   }
-  .search-form { /* ?! */
+  .search-form {
     order: 5;
     margin: 15px 0;
   }
+  .slide {
+    padding: 50px;
+  }
   .promo {
     flex-wrap: wrap;
+    padding: 40px 0;
+  }
+  .card {
+    max-width: 270px;
+    min-height: 250px;
+  }
+  .card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .delivery-card {
+    max-width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .benefit-card {
+    max-width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+
+  .tabs-card {
+    max-width: calc(50% - 15px);
+    margin-top: 30px;
+  }
+
+  .footer-logo {
+    width: 128px;
+    margin-right: 15px;
+  }
+  .footer-link {
+    margin-right: 10px;
+  }
+  .social-link {
+    margin-left: 5px;
   }
 }
-
+/* ===================== 576px ===================== */
 @media (max-width: 576px) {
   .container {
-    max-width: 90%;
+    max-width: 518px;
   }
+
+  .card {
+    padding: 10px;
+    max-width: 250px;
+  }
+
+  .benefit-card {
+    max-width: calc(50% - 15px);
+    margin-bottom: 30px;
+  }
+
   .tabs-card {
-    max-width: 100%;
+    max-width: calc(50% - 10px);
+    margin-top: 20px;
   }
 }
-/* ---------------------- */
-/* .header {
-  display: none;
-} */
-/* .slider {
-  display: none;
-} */
-/* .promo {
-  display: none;
-} */
-/* .delivery-week {
-  display: none;
-} */
-/* .section-grey {
-  display: none;
-} */
-/* .section-benefits{
-  display: none;
-} */
-/* .footer {
-  display: none;
-} */
