@@ -1,0 +1,35 @@
+.container {
+  max-width: 750px;
+}
+.slide {
+  padding: 70px;
+}
+.card {
+  padding: 15px;
+  max-width: 365px;
+  min-height: 250px;
+}
+.delivery-card {
+  flex: 50%;
+  max-width: calc(50% - 15px);
+}
+.tabs-card {
+  max-width: calc(50% - 20px);
+  margin-top: 40px;
+}
+
+.section-benefits {
+  padding-bottom: 0;
+}
+.benefit-content {
+  flex-wrap: wrap;
+}
+.benefit-card {
+  flex: 50%;
+  max-width: calc(50% - 30px);
+  margin-bottom: 60px;
+}
+
+.footer-logo {
+  margin-right: 40px;
+}

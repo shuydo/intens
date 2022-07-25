@@ -1,0 +1,18 @@
+.container {
+  max-width: 518px;
+}
+
+.card {
+  padding: 10px;
+  max-width: 250px;
+}
+
+.benefit-card {
+  max-width: calc(50% - 15px);
+  margin-bottom: 30px;
+}
+
+.tabs-card {
+  max-width: calc(50% - 10px);
+  margin-top: 20px;
+}
