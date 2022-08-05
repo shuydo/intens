@@ -974,24 +974,26 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 .container {
-  max-width: 1194px;
-  margin: auto;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  justify-content: space-between;
 }
 
 .search-form {
-  margin-left: 76px;
   background: rgba(238, 238, 238, 0.71);
   border-radius: 10px;
   display: flex;
-  max-width: 620px;
-  min-width: 300px;
+  max-width: 300px;
   flex-grow: 1;
   position: relative;
 }
@@ -1000,7 +1002,7 @@ body {
   background-color: transparent;
   border: none;
   width: 100%;
-  padding: 13px 20px;
+  padding: 13px 5px;
 }
 
 .search-btn {
@@ -1010,19 +1012,14 @@ body {
   right: 0;
   top: 0;
   height: 100%;
-  padding: 0 18px;
   cursor: pointer;
-}
-
-.auth {
-  margin-left: auto;
 }
 
 .login {
   background-color: #ebebeb;
   border-radius: 50px;
-  padding: 16px 30px;
-  display: block;
+  padding: 15px;
+  display: inline-block;
   text-decoration: none;
   font-size: 14px;
   line-height: 16px;
@@ -1031,15 +1028,15 @@ body {
 
 .shopping-cart {
   position: relative;
-  width: 49px;
-  height: 49px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #f66a15;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 30px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .counter {
@@ -1053,6 +1050,10 @@ body {
   display: block;
   padding: 5px;
   border-radius: 50%;
+}
+
+.logo img {
+  width: 44px;
 }
 
 .slide {
@@ -1471,130 +1472,9 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 1260px) {
+@media screen and (min-width: 576px) {
   .container {
-    max-width: 960px;
-  }
-  .search-form {
-    margin: 0 40px;
-  }
-  .card {
-    padding: 25px;
-    max-width: 470px;
-    min-height: 300px;
-  }
-  .delivery-card {
-    flex: 33.3%;
-    max-width: calc(33.3% - 15px);
-  }
-  .tabs {
-    margin-bottom: 0;
-  }
-  .tabs-content {
-    flex-wrap: wrap;
-    /* margin-bottom: 0;   */
-  }
-  .tabs-card {
-    flex: 50%;
-    max-width: calc(50% - 30px);
-    margin-top: 60px;
-  }
-  .section-benefits {
-    padding: 50px 0;
-  }
-  .benefit-card {
-    max-width: 232px;
-    padding: 0 5px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-  .slide {
-    padding: 70px;
-  }
-  .card {
-    padding: 15px;
-    max-width: 365px;
-    min-height: 250px;
-  }
-  .delivery-card {
-    flex: 50%;
-    max-width: calc(50% - 15px);
-  }
-  .tabs-card {
-    max-width: calc(50% - 20px);
-    margin-top: 40px;
-  }
-  .section-benefits {
-    padding-bottom: 0;
-  }
-  .benefit-content {
-    flex-wrap: wrap;
-  }
-  .benefit-card {
-    flex: 50%;
-    max-width: calc(50% - 30px);
-    margin-bottom: 60px;
-  }
-  .footer-logo {
-    margin-right: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 560px;
-  }
-  .header {
-    flex-wrap: wrap;
-  }
-  .search-form {
-    order: 5;
-    margin: 15px 0;
-  }
-  .slide {
-    padding: 50px;
-  }
-  .promo {
-    flex-wrap: wrap;
-    padding: 40px 0;
-  }
-  .card {
-    max-width: 270px;
-    min-height: 250px;
-  }
-  .card-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .delivery-card {
-    max-width: calc(50% - 10px);
-    margin-bottom: 20px;
-  }
-  .benefit-card {
-    max-width: calc(50% - 20px);
-    margin-bottom: 40px;
-  }
-  .tabs-card {
-    max-width: calc(50% - 15px);
-    margin-top: 30px;
-  }
-  .footer-logo {
-    width: 128px;
-    margin-right: 15px;
-  }
-  .footer-link {
-    margin-right: 10px;
-  }
-  .social-link {
-    margin-left: 5px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 518px;
+    width: 576px;
   }
   .card {
     padding: 10px;
